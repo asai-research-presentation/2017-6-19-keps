@@ -45,7 +45,7 @@ machine learning professionals.
 
 #+begin_xlarge
 #+begin_center
-Hello, Logic Programming, Data Mining, AGI, Theoretical CS people, too!
+Hello, Roboticists, AGI people, too!
 #+end_center
 #+end_xlarge
 
