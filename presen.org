@@ -76,6 +76,12 @@ Let me give you one question before presenting my paper...
 + Nice.
 #+end_alignright
 
+** So you definitely remember this page
+
+as part of the lecture you've taken
+
+[[spng:planning]]
+
 * 
 
 #+begin_xlarge
