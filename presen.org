@@ -1006,7 +1006,7 @@ SAE implementation uses a denoising layer (Denoising AE)
 
  [[png:ama/overview3]]
 
-* Action symbols
+* Action symbols/labels
 
 + Represent a *type* of transition (→ generalization)
 
@@ -1030,11 +1030,11 @@ initial state
 #+end_row-fluid
 #+end_container-fluid
 
-** Latplan Training Input lacks Action Labels
+** Latplan's training inputs lack the action labels
 
-+ Note: Existing AMA methods all require action symbols
++ Note: Existing AMA methods all require the action symbols
 
-+ *Latplan training input (transitions) consists of just pairs of images*
++ *Latplan's training inputs are just pairs of images (transitions)*
 
 + Without action symbols, it has *no idea which transitions are of the same type*
 
@@ -1044,11 +1044,11 @@ initial state
 
   [[png:ama/action-symbol]]
 
-** Is that a problem?
+** Is the lack of action symbols a problem? Yes, it is!
 
 + Without action symbols ::
 
-     SAE with $|z|=36 \text{bit}$
+     Imagine a 36 bit SAE ( $|z| = 36 \text{bit}$ )
 
   + → you should enumerate the *entire $2^{36}$ states as successors*,
   + → then remove the invalid transitions with AD.
@@ -1059,7 +1059,7 @@ initial state
 
 #+begin_alignright
 #+begin_larger
-+ *AAE finds these action labels without human supervision*
++ *AAE finds these action symbols without human supervision*
 #+end_larger
 #+end_alignright
 
